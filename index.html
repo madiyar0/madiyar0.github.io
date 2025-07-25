@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="output.css">
+    <title>Document</title>
+</head>
+<body>
+    <header class="flex justify-between pb-4 bg-gray-600">
+        <nav class="flex flex-col items-center md:flex-row lg:items-center pl-16 pt-4 text-white">
+            <img src="img/logo.png" class="h-6 md:h6 sm:w-20 " alt="">
+            <div class="flex justify-center gap-10 ml-16">
+                <a href="" class="h-8">Home</a>
+                <a href="" class="h-8">About</a>
+                <a href="" class="h-8">Contact</a>
+            </div>
+        </nav>
+        <button class="sm:h-10 sm:py-0 px-2 py-3 mt-3 mr-8 border bg-gray-300 text-black  rounded-lg w-[120px] border-black">
+            Contact us
+        </button>
+    </header>
+    <section id="hero" class="grid lg:grid-cols-2 md:grid-cols-1  bg-gray-200">
+        <div class="flex flex-col justify-between">
+            <div class="w-[800px] mt-32 ml-16" >
+                <h1 class=" text-4xl w-[500px] mb-5">Double click text to change it</h1>
+                <p class="w-[550px] mb-6">To style this paragraph, select this paragraph, then edit its styles in the Style tab on the right side of the Designer.</p>
+                <button class="bg-white px-5 py-4">Edit this link in the settings tab in the right panel</button>
+            </div>
+        </div>  
+        <div>
+            <div class="mt-16 sm:w-[500px] sm:pl-0">
+                <img src="img/navigator.png" class="h-80 mx-auto shadow-xl/30" alt="">
+                <p class="text-center mx-auto w-[320px] text-xs text-gray-500 mb-16 mt-5">In the navigator tab located in the right panel you can see all your elements in one place.</p>
+            </div>
+        </div>
+    </section>
+    <section id="features" class="">
+        <div class="grid grid-cols-1 md:grid-cols-2 h-[900px] sm:h-[1020px]">
+            <div class="">
+                <img src="img/classes.png" class="w-64 mx-auto pt-10" alt="">
+                <p class="text-center mx-auto w-[320px] text-xs text-gray-500 mt-5">Double click an image to replace it.</p>
+            </div>
+            <div class="flex flex-col justify-center lg:text-left sm:text-center sm:items-center">
+                <h1 class="text-4xl ">What is a Class?</h1>
+                <p class="lg:w-[570px] md:w-[400px]">
+                    A Class is more than just the name of an element, it is a title you create that can be added to other elements that you'd like to be styled the same way. Notice that if you select this paragraph, and change it, it will effect the paragraph below as well, since they have the same Class.
+                </p>
+            </div>
+            <div class="flex flex-col justify-center text-left mx-auto lg:text-left sm:text-center">
+                <h1 class="text-4xl lg:mt-0 w-[450px] sm:mt-10">Parents, and text alignment</h1>
+                <p class="lg:w-[570px] md:w-[400px]">
+                    By now you may have noticed that web design, simply put, is a series of boxes inside of boxes with text and images inside of them. Try selecting the parent element of this text Right 2 then changing the text alignment.
+                </p>
+            </div>
+            <div class="sm:mt-10">
+                <img src="img/classes.png" class="w-64 mx-auto" alt="">
+                <p class="text-center mx-auto w-[320px] text-xs text-gray-500 mt-5">You can also double click an image to change its size.</p>
+            </div>
+        </div>
+    </section>
+    <section id="cards" class="bg-gray-200 pt-16">
+        <div class="text-center">
+            <div class="">
+                <h2 class="text-4xl mb-2">Layout tip</h2>
+                <p class="">
+                    Change the layout direction of a flexbox element from horizontal to vertical.
+                </p>
+            </div>
+            <div class="flex flex-col justify-center items-center">
+                <img src="img/layout.png" class="w-[260px] pt-10" alt="">
+                <p class="text-xs text-gray-500 w-80 pb-16 pt-5">Flexbox is a display setting found in the styles tab under Layout > Display Settings</p>
+            </div>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 k lg:grid-cols-3 text-center mx-auto gap-3 pb-20">
+            <!-- Первая карточка -->
+            <div class="flex flex-col items-center bg-white shadow-2xl rounded w-[420px] mx-auto h-[350px]">
+                <h1 class="text-2xl pt-6 text-gray-600">Step 1</h1>
+                <img src="img/step1.png" class="w-23 pt-10" alt="">
+                <p class="w-72 pt-16">Click to select <span class="bg-blue-700 text-white rounded py-[2px]">Column 1</span> which is the white box that this paragraph you're reading is currently inside of.</p>
+            </div>
+            <div class="flex flex-col items-center bg-white shadow-2xl rounded w-[420px] mx-auto h-[350px]">
+                <h1 class="text-2xl pt-6 text-gray-600">Step 2</h1>
+                <img src="img/step2.png" class="w-23 pt-7" alt="">
+                <p class="w-80 pt-16">Now that <span class="bg-blue-700 text-white rounded py-[2px]">Column 1</span> 1 is selected, press the up arrow on your keyboard, selecting the parent element: <span class="bg-blue-500 text-white rounded py-[2px]">Column wrap 1</span></p>
+            </div>
+            <div class="flex flex-col items-center bg-white shadow-2xl rounded w-[420px] mx-auto h-[350px]">
+                <h1 class="text-2xl pt-6 text-gray-600">Step 3</h1>
+                <img src="img/step3.png" class="w-23 pt-10" alt="">
+                <p class="w-[350px] pt-16">With <span class="bg-blue-700 text-white rounded py-[2px]">Column wrap 1</span> selected, click the icon shown above in the <span class="text-gray-500 italic">Layout > Flex Layout</span> styles panel.</p>
+            </div>
+        </div>
+    </section>
+    <footer id="footer" class="grid-cols-1 md:grid-cols-4 lg:grid-cols-8 ">
+        <div class="bg-gray-500 h-24 flex justify-between items-center pl-16">
+            <img src="img/logo.png" class="h-6 md:h6 sm:w-20  " alt="">
+            <div class="text-white  w-96">
+                <a href="" class="">Home</a>
+                <a href="" class="ml-10">About</a>
+                <a href="" class="ml-10">Contact</a>
+            </div>
+        </div>
+        <div class="flex items-center bg-black h-12 text-gray-600 pl-16">
+            <p class="text-sm">© 2017, Webflow, Inc. All Rights Reserved. Brand logos for demonstration purposes only.</p>
+        </div>
+    </footer>
+</body>
+</html>
